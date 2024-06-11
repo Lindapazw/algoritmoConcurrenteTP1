@@ -92,3 +92,40 @@ Para compilar un programa que utilice threads en C++ llamado `ejemplo.cpp`, gene
 ```sh
 g++ ejemplo.cpp -o miejecutable -std=c++11 -pthread
 ```
+
+## Salida esperada de Algoritmo 1
+
+```cpp
+Soy A
+Soy A
+Soy A
+Soy A
+Soy A
+Soy A
+Soy A
+Soy A
+Soy A
+Soy A
+    Soy B
+    Soy B
+    Soy B
+    Soy B
+    Soy B
+    Soy B
+    Soy B
+    Soy B
+    Soy B
+    Soy B
+    Soy B
+    Soy B
+    Soy B
+    Soy B
+    Soy B
+        Soy C
+        Soy C
+        Soy C
+        Soy C
+        Soy C
+Fin
+
+```
