@@ -1,1 +1,1 @@
-# algoritmoConcurrenteTP1
+# ALGORITMOS CONCURRENTES Y PARALELOS
