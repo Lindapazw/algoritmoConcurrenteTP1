@@ -54,3 +54,41 @@ int main() {
     return 0;
 }
 ```
+
+## Algoritmo 2
+
+```cpp
+#include <iostream>
+#include <thread>
+#include <string>
+#include <chrono>
+
+using namespace std;
+
+void misaludo (string m, int demora, int veces) {
+    for (int i = 1; i <= veces; i++) {
+        cout << m << "\n";
+        this_thread::sleep_for(chrono::milliseconds(demora));
+    }
+}
+
+int main() {
+    thread P[3];
+    P[0] = thread(misaludo, "Soy 1", 100, 10);
+    P[1] = thread(misaludo, "\tSoy 2", 150, 15);
+    P[2] = thread(misaludo, "\t\tSoy 3", 300, 5);
+    P[0].join();
+    P[1].join();
+    P[2].join();
+    cout << "Fin \n";
+    return 0;
+}
+```
+
+## Compilación
+
+Para compilar un programa que utilice threads en C++ llamado `ejemplo.cpp`, generando el binario `miejecutable`, ejecutaremos:
+
+```sh
+g++ ejemplo.cpp -o miejecutable -std=c++11 -pthread
+```
