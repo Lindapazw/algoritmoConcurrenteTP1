@@ -85,10 +85,4 @@ int main() {
 }
 ```
 
-## Compilación
 
-Para compilar un programa que utilice threads en C++ llamado `ejemplo.cpp`, generando el binario `miejecutable`, ejecutaremos:
-
-```sh
-g++ ejemplo.cpp -o miejecutable -std=c++11 -pthread
-```
